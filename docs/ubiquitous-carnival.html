@@ -79,7 +79,7 @@ button:hover {
   
 <div class="item-a">
   
-  <img id="face" src="https://www.karina-collins.com/wp-content/uploads/2019/03/giphy-3.gif">
+  <img id="face" src="https://cdn.discordapp.com/emojis/846515371444142081.gif">
   
   </div>
   
@@ -90,7 +90,7 @@ button:hover {
 <div class="item-c">
   
     <button type="button" id="button" class="button" onclick="buttonClick()">&#9825;	
-today's deck &#9825;	</button>
+today's card &#9825;	</button>
   
   <button onclick=location.reload();
 >⁺˚*･༓☾reset☽༓･*˚⁺
@@ -143,38 +143,7 @@ desc: "Solitary, Lonely",
 src: "https://i.imgur.com/qNOCTGx.jpg"},
 
 ];
-
-// The button function
-
-function buttonClick() {
-  
-// Create a random number generator
-
-var cardsNumber = cards.length;
-var randomNumber = Math.random();
-var chooseRange = (randomNumber * cardsNumber) + 0;
-var numberGen = Math.floor(chooseRange);
-
-// Change HTML
-  
-  document.getElementById('card').innerHTML = "Your deck is " + cards[numberGen].card + "." + "<br> This deck's personality is " + cards[numberGen].desc;
-  document.getElementById('face').src = cards[numberGen].src;
-  document.getElementById('button').visibility = 'hidden';   
-  document.getElementById('button').innerHTML = "Get another deck?";
-
-}
-        </script>   
-<style>
-footer {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	background-color: brown;
-	color: white;
-	text-align: center;
-}
-</style>
+       </script>   
 
 	<script language="JavaScript">
   /**
