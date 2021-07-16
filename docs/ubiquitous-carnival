@@ -77,6 +77,12 @@ button:hover {
 
 <div class="container">
   
+<div class="item-a">
+  
+  <img id="face" src="https://cdn.discordapp.com/emojis/846515371444142081.gif">
+  
+  </div>
+  
 <div id="card" class="item-b">
   <p></p>
   </div>
