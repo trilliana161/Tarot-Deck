@@ -1,163 +1,4 @@
-<html>
-    <head>
- <style>
-      body {
-        background-color: #FF9999;
-      }
-    </style>
-    <style type="text/css">
-body {
-  
-  margin: 0;
-  padding: 1em;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 10px;
-}
-
-.item-a {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  justify-self: center;
-}
-
-.item-b {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  justify-self: center;
-  text-align: center;
-  font: 12px Courier, sans-serif;
-
-}
-
-.item-c {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  justify-self: center;
-
-}
-
-button {
-  background-color: #F4DBED;
-  border: none;
-  padding: 0.7em;
-  color: gray;
-  display: block;
-  font: 12px Courier, sans-serif;
-
-  -webkit-transition: 0.5s;
-
-}
-
-button:hover {
-  background-color: pink;   
-  -webkit-transition: 0.5s;
-
-}
-
-#face {
-  height: 35vw;
-  -webkit-transition: 0.5s;
-  
-
-}
-
-{card:"",
-  desc:"",
-  src:""}
-        // CSS Content
-        </style>
-</head>
-    <body>
-<html>
-
-<div class="container">
-  
-<div id="card" class="item-b">
-  <p></p>
-  </div>
-
-<div class="item-c">
-  
-    <button type="button" id="button" class="button" onclick="buttonClick()">&#9825;	
-today's card &#9825;	</button>
-  
-  <button onclick=location.reload();
->⁺˚*･༓☾reset☽༓･*˚⁺
-</button>
-
-
-
-  
-
-  </div>
-  
-  </div>
-        <script language="JavaScript"  type="text/javascript">
-// An array of cards
-
-var cards = 
-[
-  {card: "Afro Avatar",
-desc: "Debby Downer, Low Self-worth",
-src: "https://i.imgur.com/vnnj7lU.jpg"},
-{card: "Antique Anatomy",
-desc: "Friendly, Affectionate, Happy",
-src: "https://i.imgur.com/eOb5NSy"},
-{card: "Badass Unicorns",
-desc: "Heartbreak, loss, depression",
-src: "https://i.imgur.com/JM6wIOK"},
-{card: "Cryptid Tarot",
-desc: "Bully",
-src: "https://i.imgur.com/p052UXw"},
-{card: "Evolution Tarot",
-desc: "Appreciation, Joy, Nostalgia",
-src: "https://i.imgur.com/Pfllj0c"},
-{card: "Nightmare Before Christmas",
-desc: "Too Good to be True",
-src: "https://i.imgur.com/aHJsmSW"},
-{card: "Star Spinner Tarot",
-desc: "Long-Term Investment",
-src: "https://i.imgur.com/5kVer4L"},
-{card: "Tarot of the Divine",
-desc: "Chivalrous, Affectionate",
-src: "https://i.imgur.com/sCWPuoD"},
-{card: "Tarot of the Sidhe",
-desc: "Inspired, Quick-thinking",
-src: "https://i.imgur.com/KbuX9vp"},
-{card: "The Black Tarot",
-desc: "Disapointment, regret, Moving on",
-src: "https://i.imgur.com/huKmgEc"},
-{card: "Threads of Fate Weaver Tarot",
-desc: "Solitary, Lonely",
-src: "https://i.imgur.com/qNOCTGx"},
-
-];
-
-// The button function
-
-function buttonClick() {
-  
-// Create a random number generator
-
-var cardsNumber = cards.length;
-var randomNumber = Math.random();
-var chooseRange = (randomNumber * cardsNumber) + 0;
-var numberGen = Math.floor(chooseRange);
-
-// Change HTML
-  
-  document.getElementById('card').innerHTML = "Your deck is " + cards[numberGen].card + "." + "<br> This card is about " + cards[numberGen].desc;
-  document.getElementById('face').src = cards[numberGen].src;
-  document.getElementById('button').visibility = 'hidden';   
-  document.getElementById('button').innerHTML = "Get another deck?";
-
-}
-        </script>   
+       </script>   
 <style>
 footer {
 	position: fixed;
@@ -170,6 +11,27 @@ footer {
 }
 </style>
 
+<style>
+footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: #f4dbed;
+	color: #696969;
+	text-align: center;
+    font-size: 11px
+}
+</style>
+
+<footer>
+        <p style="font-family: Courier New">
+        
+	&copy; 2020 twitter.com/tsaarot </p>
+    
+    
+    
+</footer>
 	<script language="JavaScript">
   /**
     * Disable right-click of mouse, F12 key, and save key combinations on page
