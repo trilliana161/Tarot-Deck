@@ -76,7 +76,6 @@ button:hover {
 <html>
 
 <div class="container">
-  
 <div class="item-a">
   
   <img id="face" src="https://cdn.discordapp.com/emojis/846515371444142081.gif">
@@ -104,7 +103,7 @@ today's card &#9825;	</button>
   
   </div>
         <script language="JavaScript"  type="text/javascript">
-// An array of cards
+//an array of decks
 
 var cards = 
 [
@@ -143,7 +142,38 @@ desc: "Solitary, Lonely",
 src: "https://i.imgur.com/qNOCTGx.jpg"},
 
 ];
-       </script>   
+
+// The button function
+
+function buttonClick() {
+  
+// Create a random number generator
+
+var cardsNumber = cards.length;
+var randomNumber = Math.random();
+var chooseRange = (randomNumber * cardsNumber) + 0;
+var numberGen = Math.floor(chooseRange);
+
+// Change HTML
+  
+  document.getElementById('card').innerHTML = "Your deck is " + cards[numberGen].card + "." + "<br> This deck's personality is " + cards[numberGen].desc;
+  document.getElementById('face').src = cards[numberGen].src;
+  document.getElementById('button').visibility = 'hidden';   
+  document.getElementById('button').innerHTML = "Get another deck?";
+
+}
+        </script>   
+<style>
+footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: brown;
+	color: white;
+	text-align: center;
+}
+</style>
 
 	<script language="JavaScript">
   /**
