@@ -90,7 +90,7 @@ button:hover {
 <div class="item-c">
   
     <button type="button" id="button" class="button" onclick="buttonClick()">&#9825;	
-today's card &#9825;	</button>
+today's deck &#9825;	</button>
   
   <button onclick=location.reload();
 >⁺˚*･༓☾reset☽༓･*˚⁺
@@ -113,34 +113,34 @@ desc: "Debby Downer, Low Self-worth",
 src: "https://i.imgur.com/vnnj7lU.jpg"},
 {card: "Antique Anatomy",
 desc: "Friendly, Affectionate, Happy",
-src: "https://i.imgur.com/eOb5NSy"},
+src: "https://i.imgur.com/eOb5NSy.jpg"},
 {card: "Badass Unicorns",
 desc: "Heartbreak, loss, depression",
-src: "https://i.imgur.com/JM6wIOK"},
+src: "https://i.imgur.com/JM6wIOK.jpg"},
 {card: "Cryptid Tarot",
 desc: "Bully",
-src: "https://i.imgur.com/p052UXw"},
+src: "https://i.imgur.com/p052UXw.jpg"},
 {card: "Evolution Tarot",
 desc: "Appreciation, Joy, Nostalgia",
-src: "https://i.imgur.com/Pfllj0c"},
+src: "https://i.imgur.com/Pfllj0c.jpg"},
 {card: "Nightmare Before Christmas",
 desc: "Too Good to be True",
-src: "https://i.imgur.com/aHJsmSW"},
+src: "https://i.imgur.com/aHJsmSW.jpg"},
 {card: "Star Spinner Tarot",
 desc: "Long-Term Investment",
-src: "https://i.imgur.com/5kVer4L"},
+src: "https://i.imgur.com/5kVer4L.jpg"},
 {card: "Tarot of the Divine",
 desc: "Chivalrous, Affectionate",
-src: "https://i.imgur.com/sCWPuoD"},
+src: "https://i.imgur.com/sCWPuoD.jpg"},
 {card: "Tarot of the Sidhe",
 desc: "Inspired, Quick-thinking",
-src: "https://i.imgur.com/KbuX9vp"},
+src: "https://i.imgur.com/KbuX9vp.jpg"},
 {card: "The Black Tarot",
 desc: "Disapointment, regret, Moving on",
-src: "https://i.imgur.com/huKmgEc"},
+src: "https://i.imgur.com/huKmgEc.jpg"},
 {card: "Threads of Fate Weaver Tarot",
 desc: "Solitary, Lonely",
-src: "https://i.imgur.com/qNOCTGx"},
+src: "https://i.imgur.com/qNOCTGx.jpg"},
 
 ];
 
@@ -157,7 +157,7 @@ var numberGen = Math.floor(chooseRange);
 
 // Change HTML
   
-  document.getElementById('card').innerHTML = "Your deck is " + cards[numberGen].card + "." + "<br> This card is about " + cards[numberGen].desc;
+  document.getElementById('card').innerHTML = "Your deck is " + cards[numberGen].card + "." + "<br> This deck's personality is " + cards[numberGen].desc;
   document.getElementById('face').src = cards[numberGen].src;
   document.getElementById('button').visibility = 'hidden';   
   document.getElementById('button').innerHTML = "Get another deck?";
