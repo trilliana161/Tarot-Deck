@@ -1,5 +1,164 @@
 <html>
     <head>
+    <style type="text/css">
+	<body style="background-color:#1c87c9;">
+body {
+  
+  margin: 0;
+  padding: 1em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.item-a {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: center;
+}
+
+.item-b {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: center;
+  text-align: center;
+  font: 12px Courier, sans-serif;
+
+}
+
+.item-c {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  justify-self: center;
+
+}
+
+button {
+  background-color: #F4DBED;
+  border: none;
+  padding: 0.7em;
+  color: gray;
+  display: block;
+  font: 12px Courier, sans-serif;
+
+  -webkit-transition: 0.5s;
+
+}
+
+button:hover {
+  background-color: pink;   
+  -webkit-transition: 0.5s;
+
+}
+
+#face {
+  height: 35vw;
+  -webkit-transition: 0.5s;
+  
+
+}
+
+{deck:"",
+  desc:"",
+  src:""}
+        // CSS Content
+        </style>
+</head>
+    <body>
+<html>
+
+<div class="container">
+<div class="item-a">
+  
+  <img id="face" src="https://www.karina-collins.com/wp-content/uploads/2019/03/giphy-3.gif">
+  
+  </div>
+  
+<div id="deck" class="item-b">
+  <p></p>
+  </div>
+
+<div class="item-c">
+  
+    <button type="button" id="button" class="button" onclick="buttonClick()">&#9825;	
+today's deck &#9825;	</button>
+  
+  <button onclick=location.reload();
+>⁺˚*･༓☾reset☽༓･*˚⁺
+</button>
+
+
+
+  
+
+  </div>
+  
+  </div>
+        <script language="JavaScript"  type="text/javascript">
+// An array of decks
+
+var deck = 
+[
+  {deck: "Afro Avatar",
+desc: "Debby Downer, Low Self-worth",
+src: "https://i.imgur.com/vnnj7lU.jpg"},
+{deck: "Antique Anatomy",
+desc: "Friendly, Affectionate, Happy",
+src: "https://imgur.com/eOb5NSy"},
+{deck: "Badass Unicorns",
+desc: "Heartbreak, loss, depression",
+src: "https://imgur.com/JM6wIOK"},
+{deck: "Cryptid Tarot",
+desc: "Bully",
+src: "https://imgur.com/p052UXw"},
+{deck: "Evolution Tarot",
+desc: "Appreciation, Joy, Nostalgia",
+src: "https://imgur.com/Pfllj0c"},
+{deck: "Nightmare Before Christmas",
+desc: "Too Good to be True",
+src: "https://imgur.com/aHJsmSW"},
+{deck: "Star Spinner Tarot",
+desc: "Long-Term Investment",
+src: "https://imgur.com/5kVer4L"},
+{deck: "Tarot of the Divine",
+desc: "Chivalrous, Affectionate",
+src: "https://imgur.com/sCWPuoD"},
+{deck: "Tarot of the Sidhe",
+desc: "Inspired, Quick-thinking",
+src: "https://imgur.com/KbuX9vp"},
+{deck: "The Black Tarot",
+desc: "Disapointment, regret, Moving on",
+src: "https://imgur.com/huKmgEc"},
+{deck: "Threads of Fate Weaver Tarot",
+desc: "Solitary, Lonely",
+src: "https://imgur.com/qNOCTGx"}
+];
+
+// The button function
+
+function buttonClick() {
+  
+// Create a random number generator
+
+var decksNumber = decks.length;
+var randomNumber = Math.random();
+var chooseRange = (randomNumber * decksNumber) + 0;
+var numberGen = Math.floor(chooseRange);
+
+// Change HTML
+  
+  document.getElementById('deck').innerHTML = "Your deck is " + decks[numberGen].deck + "." + "<br> This deck is about " + decks[numberGen].desc;
+  document.getElementById('face').src = decks[numberGen].src;
+  document.getElementById('button').visibility = 'hidden';   
+  document.getElementById('button').innerHTML = "Get another deck?";
+
+}
+ <html>
+    <head>
  <style>
       body {
         background-color: #FF9999;
@@ -113,9 +272,9 @@ src: "https://i.imgur.com/36oSytF.jpg"},
 {card: "Antique Anatomy",
 desc: "Friendly, Affectionate, Happy",
 src: "https://i.imgur.com/eOb5NSy.jpg"},
-{card: "Badass Unicorns",
-desc: "Heartbreak, loss, depression",
-src: "https://i.imgur.com/JM6wIOK.jpg"},
+//{card: "Badass Unicorns",
+//desc: "Heartbreak, loss, depression",
+//src: "https://i.imgur.com/JM6wIOK.jpg"},
 {card: "Cryptid Tarot",
 desc: "Bully",
 src: "https://i.imgur.com/REdOXaW.jpg"},
